@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<form>
+<input type="text" name="accoutname" id="account"/>
+<button type="button" onclick="check()">
+  Check
+</button>
+</form>
+
+</body>
+<script>
+function check() {
+  var  regexp = /^[_a-z0-9]{6,}$/;
+  var text = document.getElementById('account').value;
+
+  if(regexp.test(text)){
+    alert("OK");
+  }else{
+    alert('KO OK');
+  }
+}
+</script>
+</html>
